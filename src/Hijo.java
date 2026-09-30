@@ -5,16 +5,13 @@
     public class Hijo {
         public static void main() {
 
-            Scanner scFlujoPadre = new Scanner(System.in);
-            Random random = new Random();
+            Scanner input = new Scanner(System.in);
 
+            int num = 7;
 
-            int numeroAleatorio = random.nextInt(1, 11);
-            int numeroPadre;
-
-            while((numeroPadre = scFlujoPadre.nextInt()) != numeroAleatorio){
+            while(input.nextInt() != num){
                 System.out.println("Incorrecto");
-                scFlujoPadre.nextLine();
+                flujoDatosPadre.nextLine();
             }
             System.out.println("Correcto");
         }
